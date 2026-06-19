@@ -1,4 +1,4 @@
-import { Award, BookOpen, Target, Eye, Star, GraduationCap } from "lucide-react";
+import { Award } from "lucide-react";
 
 export default function MissionVision() {
   return (

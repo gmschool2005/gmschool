@@ -1,9 +1,7 @@
 import {
-  Users,
   GraduationCap,
   BookOpen,
   Award,
-  Mail,
 } from "lucide-react";
 
 const teachers = [

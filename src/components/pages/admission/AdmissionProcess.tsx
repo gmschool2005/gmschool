@@ -1,6 +1,5 @@
 import {
   FileText,
-  ClipboardCheck,
   UserCheck,
   GraduationCap,
   FileBadge,

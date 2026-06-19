@@ -4,7 +4,6 @@ import {
   Microscope,
   Globe,
   Users,
-  Award,
   GraduationCap,
   ArrowRight,
   CheckCircle2,
