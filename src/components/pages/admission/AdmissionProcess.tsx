@@ -9,12 +9,20 @@ import {
   School,
 } from "lucide-react";
 
+import {Link} from "react-router-dom"
+
 const admissionSteps = [
   {
     icon: FileText,
     title: "Submit Application",
     description:
       "Complete the admission application form with accurate student and parent details.",
+  },
+   {
+    icon: FileText,
+    title: "Registration",
+    description:
+      "Complete the registration.",
   },
   {
     icon: FileBadge,
@@ -24,7 +32,7 @@ const admissionSteps = [
   },
   {
     icon: UserCheck,
-    title: "Interaction / Assessment",
+    title: "Interaction & Assessment",
     description:
       "Students may participate in an age-appropriate interaction or assessment process.",
   },
@@ -40,9 +48,8 @@ const documents = [
   "Birth Certificate",
   "Passport Size Photographs",
   "Aadhaar Card (Student & Parent)",
-  "Previous School Report Card",
   "Transfer Certificate (if applicable)",
-  "Address Proof",
+  
 ];
 
 const guidelines = [
@@ -55,7 +62,7 @@ const guidelines = [
 
 const stats = [
   {
-    value: "4",
+    value: "5",
     label: "Simple Steps",
   },
   {
@@ -65,10 +72,6 @@ const stats = [
   {
     value: "100%",
     label: "Transparent Process",
-  },
-  {
-    value: "全年",
-    label: "Admission Enquiries",
   },
 ];
 
@@ -289,11 +292,12 @@ export default function AdmissionProcess() {
             the process and answer any questions regarding eligibility,
             documentation, or admission procedures.
           </p>
-
+              <Link to= "/contact">
           <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition">
             Contact Admissions Office
             <ArrowRight size={18} />
           </button>
+          </Link>
         </div>
       </section>
     </div>

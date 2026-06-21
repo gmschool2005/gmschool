@@ -22,18 +22,7 @@ const academicLevels = [
     description:
       "Expanding conceptual understanding while nurturing analytical thinking, communication, and collaboration skills.",
   },
-  {
-    title: "Secondary Wing",
-    classes: "Classes IX - X",
-    description:
-      "Focused preparation aligned with CBSE standards, emphasizing academic rigor and examination readiness.",
-  },
-  {
-    title: "Senior Secondary",
-    classes: "Classes XI - XII",
-    description:
-      "Comprehensive subject specialization that prepares students for higher education and future careers.",
-  },
+  
 ];
 
 const features = [

@@ -34,15 +34,14 @@ export default function Navbar() {
                 { name: "Principal's Message", path: "/about/principal-message" },
                 { name: "Mission & Vision", path: "/about/mission-vision" },
                 { name: "Our Team", path: "/about/our-team" },
-                { name: "Mandatory Information", path: "/about/mandatory-information" },
+                { name: "Hostel Facilities", path: "/about/hostel-info" },
             ],
         },
         {
             title: "Academics",
             items: [
                 { name: "School Timing", path: "/academics/school-timing" },
-                { name: "Primary", path: "/academics/primary" },
-                { name: "Middle School", path: "/academics/middle-school" },
+                { name: "KG - VIII", path: "/academics/KG-VIII" },
                 { name: "Curriculum", path: "/academics/curriculum" },
                 { name: "Activities", path: "/academics/activities" },
             ],
@@ -58,8 +57,7 @@ export default function Navbar() {
         {
             title: "Achievements",
             items: [
-                { name: "CBSE Class-X", path: "/achievements/cbse-class-x" },
-                { name: "Awards", path: "/achievements/awards" },
+                { name: "100% Board Result", path: "/achievements/cbse-class-x" },
                 { name: "Alumni", path: "/achievements/alumni" },
             ],
         },
@@ -112,7 +110,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-6 text-xs text-blue-100">
                         <span className="flex items-center gap-1.5">
                             <Clock size={12} className="text-yellow-400" />
-                            Mon–Sat: 7:30 AM – 2:30 PM
+                            Mon–Sat: 9:00 AM – 2:30 PM
                         </span>
                         <span className="hidden sm:flex items-center gap-1.5">
                             <Phone size={12} className="text-yellow-400" />
@@ -167,7 +165,7 @@ export default function Navbar() {
                                 className="text-2xl font-extrabold leading-tight tracking-wide"
                                 style={{ color: '#B91C1C', fontFamily: 'Georgia, serif' }}
                             >
-                                G. M. English School
+                                G.M. English School
                             </h1>
                             <p
                                 className="text-xs font-semibold tracking-widest uppercase"

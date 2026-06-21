@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link} from "react-router-dom";
 const VALUES = [
   { icon: "📖", title: "Academic Excellence", desc: "We cultivate curiosity and a love of learning through rigorous, thoughtful education." },
   { icon: "🤝", title: "Character & Integrity", desc: "Honesty, respect, and responsibility are the pillars we build every student upon." },
@@ -42,7 +42,7 @@ G.M. English School is committed to stimulating an environment where each and ev
             <h1 className="text-2xl font-bold text-[#0a2463] leading-tight">
               Principal's Message
             </h1>
-            <p className="text-base font-semibold text-slate-700 mt-1">Mr. [Principal Name]</p>
+            <p className="text-base font-semibold text-slate-700 mt-1">Mr. Rameshwar Singh</p>
             <p className="text-sm text-slate-500">Principal, G.M. English School — Chanaptia</p>
 
             {/* Credential badges */}
@@ -103,7 +103,7 @@ G.M. English School is committed to stimulating an environment where each and ev
                 className="text-xl text-[#0a2463]"
                 style={{ fontFamily: "'Segoe Script', 'Brush Script MT', cursive", letterSpacing: "0.02em" }}
               >
-                [Principal Name]
+                Rameshwar Singh
               </p>
               <p className="text-xs text-slate-400 mt-1">Principal, G.M. English School</p>
             </div>
@@ -145,12 +145,12 @@ G.M. English School is committed to stimulating an environment where each and ev
             <p className="text-blue-300 text-xs mt-0.5">Reach out via the school office</p>
           </div>
           <div className="flex gap-3">
+            <Link to="/contact">
             <span className="text-xs font-semibold px-4 py-2 rounded-full bg-white text-[#0a2463]">
               📞 Write to office
             </span>
-            <span className="text-xs font-semibold px-4 py-2 rounded-full border border-[#c9a832] text-[#c9a832]">
-              📅 Request meeting
-            </span>
+            </Link>
+           
           </div>
         </div>
 

@@ -11,6 +11,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import {Link} from "react-router-dom";
+
 const learningAreas = [
   {
     icon: BookOpen,
@@ -61,7 +63,7 @@ const highlights = [
 
 const stats = [
   {
-    value: "I-V",
+    value: "KG - VIII",
     label: "Classes Covered",
   },
   {
@@ -92,11 +94,11 @@ export default function Primary() {
         <div className="relative mx-auto max-w-6xl px-6 lg:px-12">
           <div className="text-center">
             <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 bg-white/10 px-3 py-1 text-xs font-medium text-[#F7D774] backdrop-blur-sm">
-              Classes I – V
+              Classes KG - VIII
             </span>
 
             <h1 className="mt-3 text-3xl font-bold tracking-wide md:text-4xl">
-             Primary School
+            School Classes
             </h1>
 
             <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-[#D4AF37]" />
@@ -353,11 +355,12 @@ export default function Primary() {
             balanced blend of academics, creativity, values, and experiential
             learning.
           </p>
-
+           <Link to = "/contact">
           <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition">
             Explore Admissions
             <ArrowRight size={18} />
           </button>
+          </Link>
         </div>
       </section>
     </div>

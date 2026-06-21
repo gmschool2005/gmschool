@@ -8,6 +8,8 @@ import {
   School,
 } from "lucide-react";
 
+import {Link} from "react-router-dom";
+
 const feeData = [
   {
     class: "KG Classes",
@@ -304,11 +306,12 @@ export default function FeeStructure() {
             Join a nurturing educational environment focused on academic
             excellence, character development, and lifelong learning.
           </p>
-
+            <Link to= "/contact">
           <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition">
             Apply For Admission
             <ArrowRight size={18} />
           </button>
+          </Link>
         </div>
       </section>
     </div>

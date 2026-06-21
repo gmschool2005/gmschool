@@ -1,5 +1,4 @@
 import {
-  Trophy,
   Music,
   Palette,
   BookOpen,
@@ -64,16 +63,9 @@ const activities = [
 const featuredPrograms = [
   "Annual Sports Meet",
   "Science Exhibition",
-  "Inter-School Debate Competition",
   "Cultural Festival",
 ];
 
-const stats = [
-  { value: "50+", label: "Annual Activities" },
-  { value: "1000+", label: "Student Participants" },
-  { value: "100+", label: "Awards & Recognitions" },
-  { value: "15+", label: "Clubs & Societies" },
-];
 
 export default function Activities() {
   return (
@@ -209,27 +201,7 @@ export default function Activities() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat, i) => (
-              <div
-                key={i}
-                className="rounded-3xl border-t-4 border-[#D4AF37] bg-white p-8 text-center shadow-lg"
-              >
-                <Trophy className="mx-auto text-[#B22222]" size={40} />
 
-                <h3 className="mt-4 text-4xl font-bold text-[#082C6C]">
-                  {stat.value}
-                </h3>
-
-                <p className="mt-2 text-gray-600">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Gallery Preview */}
       <section className="bg-[#F8FAFC] py-20">

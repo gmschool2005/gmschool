@@ -93,10 +93,10 @@ function SchoolImg({ src, alt, fallbackText }: { src: string; alt: string; fallb
 /* ─── MAIN PAGE ──────────────────────────────────────── */
 export default function OurSchool() {
   const stats = [
-    { icon: <GraduationCap size={28} />, value: 1200, suffix: "+", label: "Students Enrolled" },
-    { icon: <Users size={28} />, value: 65, suffix: "+", label: "Qualified Faculty" },
-    { icon: <Award size={28} />, value: 15, suffix: "+", label: "Years of Excellence" },
-    { icon: <Star size={28} />, value: 98, suffix: "%", label: "Board Pass Rate" },
+    { icon: <GraduationCap size={28} />, value: 700, suffix: "+", label: "Students Enrolled" },
+    { icon: <Users size={28} />, value: 30, suffix: "+", label: "Qualified Faculty" },
+    { icon: <Award size={28} />, value: 21, suffix: "+", label: "Years of Excellence" },
+    { icon: <Star size={28} />, value: 100, suffix: "%", label: "Board Pass Rate" },
   ];
 
   const values = [
@@ -107,12 +107,9 @@ export default function OurSchool() {
   ];
 
   const milestones = [
-    { year: "2009", title: "School Founded", desc: "Established with a vision to bring quality English-medium education to Chanaptia." },
-    { year: "2012", title: "CBSE Affiliation", desc: "Received CBSE affiliation, opening doors to national-level academic standards." },
-    { year: "2016", title: "New Campus Block", desc: "Inaugurated the expanded infrastructure — science labs, library, and sports ground." },
-    { year: "2019", title: "District Topper", desc: "Our students secured top ranks in the Bihar Board examinations for the first time." },
-    { year: "2023", title: "Digital Classrooms", desc: "Rolled out smart classrooms with interactive boards across all grades." },
-    { year: "2025", title: "1200+ Students", desc: "A growing family of over 1,200 students, 65 teachers, and counting." },
+    { year: "2005", title: "School Founded", desc: "Established with a vision to bring quality English-medium education to Chanaptia." },
+    { year: "2024", title: "Permitted by Bihar Govt.", desc: " QR CODE NO. : 2031025202376130436/2023" },
+    { year: "2024", title: "New Campus Block", desc: "Inaugurated the expanded infrastructure — science labs, computer lab, and smart class." },
   ];
 
   return (
@@ -146,10 +143,10 @@ export default function OurSchool() {
               </h1>
               <p className="gs-hero-subtitle">
                 G. M. English School has been building scholars, leaders, and
-                compassionate citizens since 2009 — right in the heart of Bihar.
+                compassionate citizens since 2005 — right in the heart of Bihar.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link to="/admission/apply-online" className="gs-btn-primary">Enroll Today →</Link>
+                <Link to="/contact" className="gs-btn-primary">Enroll Today →</Link>
                 <Link to="/about/principal-message" className="gs-btn-ghost">Meet Our Principal</Link>
               </div>
             </Reveal>
@@ -172,7 +169,7 @@ export default function OurSchool() {
                   </div>
                 </div>
                 <div className="gs-mosaic-badge">
-                  CBSE Affiliated<br />Est. 2009
+                  Est. 2005
                 </div>
               </div>
             </Reveal>
@@ -243,13 +240,13 @@ export default function OurSchool() {
               A School Built on<br /><em>Belief in Every Child</em>
             </h2>
             <p className="gs-body-text">
-              Founded in 2009 with a single classroom and an unshakeable conviction that every child in rural Bihar deserved world-class education, G. M. English School has grown into one of the region's most trusted institutions.
+              G.M. English School, Chiran Chowk, Chanpatia, was originally founded in 2005 as a branch of Gyan Mandir Shikshan Sansthan, an educational institution established in 1986 with the vision of providing quality education to society.
             </p>
             <p className="gs-body-text">
-              Affiliated with CBSE, we follow a curriculum designed to prepare students not just for examinations, but for life — developing critical thinking, resilience, and a deep love of learning.
+              The school was established to meet the growing demand for English-medium education in the region. Since its inception, G.M. English School has been committed to fostering academic excellence, discipline, and strong moral values among its students.
             </p>
             <p className="gs-body-text">
-              Today, over 1,200 students walk through our gates each morning. Families trust us because we deliver on a simple promise: every child who comes to G. M. leaves more capable than they arrived.
+              Guided by its motto, "Strive for Excellence," the school continues to nurture confident, responsible, and successful individuals while remaining dedicated to serving the community through quality education.
             </p>
           </Reveal>
 
@@ -343,8 +340,8 @@ export default function OurSchool() {
               Admissions for 2025–26 are now open. Give your child the education they deserve.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Link to="/admission/apply-online" className="gs-btn-primary">Apply for Admission</Link>
-              <Link to="/admission/process" className="gs-btn-ghost">Learn the Process</Link>
+              <Link to="/contact" className="gs-btn-primary">Apply for Admission</Link>
+              <Link to="/contact" className="gs-btn-ghost">Learn the Process</Link>
             </div>
           </div>
         </Reveal>

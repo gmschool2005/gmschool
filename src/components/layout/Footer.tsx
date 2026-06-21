@@ -135,7 +135,7 @@ export default function Footer() {
                 className="mt-5 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold"
                 style={{ background: 'rgba(201,151,28,0.12)', border: '1px solid rgba(201,151,28,0.3)', color: '#C9971C' }}
               >
-                ✦ CBSE Affiliated School
+                ✦ 21+ Years of Trust and Excellence 
               </div>
             </div>
 

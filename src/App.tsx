@@ -10,12 +10,11 @@ import SchoolTiming from "./components/pages/academics/SchoolTiming";
 import PrincipalMessage from "./components/pages/about/PrincipalMessage";
 import MissionVision from "./components/pages/about/MissionVision";
 import OurTeam from "./components/pages/about/OurTeam";
-import MandatoryInformation from "./components/pages/about/MandatoryInformation";
+import Hostel from "./components/pages/about/Hostel";
 
 // Academics
 
-import Primary from "./components/pages/academics/Primary";
-import MiddleSchool from "./components/pages/academics/MiddleSchool";
+import Classes from "./components/pages/academics/KG-VIII";
 import Curriculum from "./components/pages/academics/Curriculum";
 import Activities from "./components/pages/academics/Activities";
 
@@ -49,12 +48,11 @@ function App() {
         <Route path="/about/principal-message" element={<PrincipalMessage />} />
         <Route path="/about/mission-vision" element={<MissionVision />} />
         <Route path="/about/our-team" element={<OurTeam />} />
-        <Route path="/about/mandatory-information" element={<MandatoryInformation />}/>
+        <Route path="/about/hostel-info" element={<Hostel />}/>
 
         {/* Academics */}
         <Route path="/academics/school-timing" element={<SchoolTiming />} />
-        <Route path="/academics/primary" element={<Primary />} />
-        <Route path="/academics/middle-school" element={<MiddleSchool />} />
+        <Route path="/academics/KG-VIII" element={<Classes />} />
         <Route path="/academics/curriculum" element={<Curriculum />} />
         <Route path="/academics/activities" element={<Activities />} />
 
