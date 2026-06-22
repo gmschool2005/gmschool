@@ -97,7 +97,7 @@ export default function OurTeam() {
 
             <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-yellow-400">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                src="/images/gallery/img7.JPG"
                 alt="Teaching Faculty"
                 className="w-full h-[450px] object-cover"
               />

@@ -64,6 +64,7 @@ export default function Navbar() {
         {
             title: "Gallery",
             items: [
+                { name: "All Photos", path: "/gallery/all-photos" },
                 { name: "Sports Day", path: "/gallery/sports-day" },
                 { name: "Annual Function", path: "/gallery/annual-function" },
             ],

@@ -12,12 +12,6 @@ import {
 import {Link} from "react-router-dom"
 
 const admissionSteps = [
-  {
-    icon: FileText,
-    title: "Submit Application",
-    description:
-      "Complete the admission application form with accurate student and parent details.",
-  },
    {
     icon: FileText,
     title: "Registration",
@@ -25,17 +19,18 @@ const admissionSteps = [
       "Complete the registration.",
   },
   {
+    icon: UserCheck,
+    title: "Interaction & Entrance",
+    description:
+      "Students may participate in an age-appropriate interaction or assessment process.",
+  },
+  {
     icon: FileBadge,
     title: "Document Verification",
     description:
       "Submit the required documents for verification and eligibility assessment.",
   },
-  {
-    icon: UserCheck,
-    title: "Interaction & Assessment",
-    description:
-      "Students may participate in an age-appropriate interaction or assessment process.",
-  },
+  
   {
     icon: GraduationCap,
     title: "Admission Confirmation",
@@ -62,7 +57,7 @@ const guidelines = [
 
 const stats = [
   {
-    value: "5",
+    value: "4",
     label: "Simple Steps",
   },
   {

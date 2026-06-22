@@ -29,6 +29,7 @@ import Awards from "./components/pages/achievements/Awards";
 import Alumni from "./components/pages/achievements/Alumni";
 
 // Gallery
+import AllPhotos from "./components/pages/gallery/AllPhotos";
 import SportsDay from "./components/pages/gallery/SportsDay";
 import AnnualFunction from "./components/pages/gallery/AnnualFunction";
 
@@ -67,6 +68,7 @@ function App() {
         <Route path="/achievements/alumni" element={<Alumni />} />
 
         {/* Gallery */}
+        <Route path="/gallery/all-photos" element={<AllPhotos />} />
         <Route path="/gallery/sports-day" element={<SportsDay />} />
         <Route path="/gallery/annual-function" element={<AnnualFunction />}/>
         <Route path="/contact" element={<Contact />}/>

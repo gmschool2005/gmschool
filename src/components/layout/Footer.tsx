@@ -11,19 +11,17 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   const quickLinks = [
-    { label: "Home", path: "/" },
-    { label: "About Us", path: "/about/our-school" },
+    { label: "About Us", path: "/" },
     { label: "Academics", path: "/academics/curriculum" },
     { label: "Admissions", path: "/admission/process" },
-    { label: "Achievements", path: "/achievements/awards" },
-    { label: "Gallery", path: "/gallery/photos" },
-    { label: "Contact", path: "#contact" },
+    { label: "Achievements", path: "/achievements/cbse-class-x" },
+    { label: "Gallery", path: "/gallery/all-photos" },
+    { label: "Contact", path: "/contact" },
   ];
 
   const importantLinks = [
     { label: "CBSE Official Website", href: "https://cbse.gov.in" },
     { label: "NCERT", href: "https://ncert.nic.in" },
-    { label: "Mandatory Disclosure", href: "/about/mandatory-information" },
     { label: "Fee Structure", href: "/admission/fee-structure" },
     { label: "Apply Online", href: "/admission/apply-online" },
   ];

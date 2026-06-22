@@ -159,13 +159,13 @@ export default function OurSchool() {
                   style={{ border: "3px solid rgba(201,151,28,0.4)" }}
                 >
                   <div className="gs-mosaic-main">
-                    <SchoolImg src="/images/school-main.jpg" alt="School building" fallbackText="School Building" />
+                    <SchoolImg src="/images/gallery/img7.JPG" alt="School building" fallbackText="School Building" />
                   </div>
                   <div>
-                    <SchoolImg src="/images/students.jpg" alt="Students learning" fallbackText="Students" />
+                    <SchoolImg src="/images/gallery/img7.JPG" alt="Students learning" fallbackText="Students" />
                   </div>
                   <div>
-                    <SchoolImg src="/images/classroom.jpg" alt="Modern classroom" fallbackText="Classroom" />
+                    <SchoolImg src="/images/gallery/img7.JPG" alt="Modern classroom" fallbackText="Classroom" />
                   </div>
                 </div>
                 <div className="gs-mosaic-badge">
@@ -208,13 +208,13 @@ export default function OurSchool() {
           <div className="slider-container">
             <div className="slider-track">
               {[
-                "/images/gallery1.jpg",
-                "/images/gallery2.jpg",
-                "/images/gallery3.webp",
-                "/images/gallery1.jpg",
-                "/images/gallery2.jpg",
-                "/images/gallery3.webp",
-
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",
+                "/images/gallery/img7.JPG",  
               ].map((img, index) => (
                 <div key={index} className="slider-card">
                   <img
@@ -256,7 +256,7 @@ export default function OurSchool() {
               style={{ border: "3px solid rgba(201,151,28,0.3)", boxShadow: "0 24px 64px rgba(27,46,107,0.15)" }}
             >
               <div style={{ height: 320 }}>
-                <SchoolImg src="/images/school-aerial.jpg" alt="School campus" fallbackText="School Campus" />
+                <SchoolImg src="/images/gallery/img7.JPG" alt="School campus" fallbackText="School Campus" />
               </div>
             </div>
 
@@ -266,7 +266,7 @@ export default function OurSchool() {
               </p>
               <div className="gs-quote-author">
                 <div className="gs-quote-avatar">
-                  <SchoolImg src="/images/principal.jpg" alt="Principal" fallbackText="Principal" />
+                  <SchoolImg src="/images/gallery/img7.JPG" alt="Principal" fallbackText="Principal" />
                 </div>
                 <div>
                   <div className="gs-quote-name">School Principal</div>
@@ -341,7 +341,7 @@ export default function OurSchool() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link to="/contact" className="gs-btn-primary">Apply for Admission</Link>
-              <Link to="/contact" className="gs-btn-ghost">Learn the Process</Link>
+              <Link to="/admission/process" className="gs-btn-ghost">Learn the Process</Link>
             </div>
           </div>
         </Reveal>
