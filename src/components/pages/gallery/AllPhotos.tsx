@@ -1,4 +1,4 @@
-import { Camera, ImageIcon, Award, School } from "lucide-react";
+import { Camera, Award, School } from "lucide-react";
 
 const galleryImages = [
   "/images/gallery/img1.jpeg",
