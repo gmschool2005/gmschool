@@ -26,13 +26,7 @@ const galleryImages = [
  
 ];
 
-const categories = [
-  "Campus Life",
-  "Academics",
-  "Sports",
-  "Events",
-  "Cultural Activities",
-];
+
 
 export default function Gallery() {
   return (
