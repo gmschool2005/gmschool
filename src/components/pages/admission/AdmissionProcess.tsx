@@ -55,20 +55,7 @@ const guidelines = [
   "Parents are encouraged to visit the campus before admission.",
 ];
 
-const stats = [
-  {
-    value: "4",
-    label: "Simple Steps",
-  },
-  {
-    value: "CBSE",
-    label: "Curriculum",
-  },
-  {
-    value: "100%",
-    label: "Transparent Process",
-  },
-];
+
 
 export default function AdmissionProcess() {
   return (
@@ -136,7 +123,7 @@ export default function AdmissionProcess() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/admission-process.jpg"
+                src="/images/gallery/img29.png"
                 alt="Admission Process"
                 className="h-full w-full object-cover"
               />
@@ -145,25 +132,7 @@ export default function AdmissionProcess() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-[#F8FAFC] py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="rounded-3xl bg-white p-8 shadow-lg border-t-4 border-[#D4AF37] text-center"
-              >
-                <h3 className="text-4xl font-bold text-[#082C6C]">
-                  {stat.value}
-                </h3>
-
-                <p className="mt-3 text-gray-600">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+ 
 
       {/* Admission Steps */}
       <section className="py-20">

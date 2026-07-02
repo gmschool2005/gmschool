@@ -8,6 +8,7 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const activities = [
   {
@@ -16,7 +17,7 @@ const activities = [
     description:
       "Encouraging physical fitness, discipline, teamwork, and sportsmanship through a variety of indoor and outdoor games.",
     image:
-      "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
+      "/images/gallery/img23.jpg",
   },
   {
     title: "Cultural Activities",
@@ -24,7 +25,7 @@ const activities = [
     description:
       "Celebrating creativity and cultural heritage through music, dance, drama, and stage performances.",
     image:
-      "https://images.unsplash.com/photo-1516280440614-37939bbacd81",
+      "/images/gallery/img5.jpg",
   },
   {
     title: "Art & Craft",
@@ -32,7 +33,7 @@ const activities = [
     description:
       "Providing opportunities for artistic expression and imagination through various creative projects.",
     image:
-      "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+      "/images/gallery/img23.jpg",
   },
   {
     title: "Literary Activities",
@@ -40,7 +41,7 @@ const activities = [
     description:
       "Developing communication and language skills through debates, quizzes, speeches, and creative writing.",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "/images/gallery/img25.jpg",
   },
   {
     title: "Science & Innovation",
@@ -48,7 +49,7 @@ const activities = [
     description:
       "Promoting curiosity, innovation, and scientific thinking through exhibitions and projects.",
     image:
-      "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+      "/images/gallery/img26.jpg",
   },
   {
     title: "Leadership Programs",
@@ -56,7 +57,7 @@ const activities = [
     description:
       "Building confidence and responsibility through student councils, clubs, and leadership initiatives.",
     image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      "/images/gallery/img27.jpg",
   },
 ];
 
@@ -72,37 +73,37 @@ export default function Activities() {
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-[#082C6C] via-[#0D3B8E] to-[#164DA8] py-10 text-white">
-  {/* Decorative Elements */}
-  <div className="absolute inset-0">
-    <div className="absolute left-0 top-0 h-24 w-24 rounded-full bg-white/5 blur-3xl" />
-    <div className="absolute right-0 bottom-0 h-24 w-24 rounded-full bg-[#D4AF37]/10 blur-3xl" />
-  </div>
+        {/* Decorative Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute left-0 top-0 h-24 w-24 rounded-full bg-white/5 blur-3xl" />
+          <div className="absolute right-0 bottom-0 h-24 w-24 rounded-full bg-[#D4AF37]/10 blur-3xl" />
+        </div>
 
-  <div className="relative mx-auto max-w-6xl px-6 lg:px-12">
-    <div className="text-center">
-      <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 bg-white/10 px-3 py-1 text-xs font-medium text-[#F7D774] backdrop-blur-sm">
-         Student Enrichment Programs
-      </span>
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-12">
+          <div className="text-center">
+            <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 bg-white/10 px-3 py-1 text-xs font-medium text-[#F7D774] backdrop-blur-sm">
+              Student Enrichment Programs
+            </span>
 
-      <h1 className="mt-3 text-3xl font-bold tracking-wide md:text-4xl">
-         Co-Curricular &
+            <h1 className="mt-3 text-3xl font-bold tracking-wide md:text-4xl">
+              Co-Curricular &
               <span className="text-[#D4AF37]">
                 {" "}
                 Student Activities
               </span>
-      </h1>
+            </h1>
 
-      <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-[#D4AF37]" />
+            <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-[#D4AF37]" />
 
-      <p className="mx-auto mt-3 max-w-xl text-sm text-blue-100">
-         We believe education extends beyond the classroom. Our
+            <p className="mx-auto mt-3 max-w-xl text-sm text-blue-100">
+              We believe education extends beyond the classroom. Our
               comprehensive activity programs nurture leadership, creativity,
               teamwork, discipline, and confidence in every student.
-      </p>
-    </div>
-  </div>
-</section>
-      
+            </p>
+          </div>
+        </div>
+      </section>
+
 
       {/* Gold Divider */}
       <div className="h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
@@ -192,7 +193,7 @@ export default function Activities() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1529390079861-591de354faf5"
+                src="/images/gallery/img1.jpg"
                 alt="Featured Activities"
                 className="h-full w-full object-cover"
               />
@@ -220,13 +221,13 @@ export default function Activities() {
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
+            {[1, 2, 3, 5, 6, 25].map((item) => (
               <div
                 key={item}
                 className="overflow-hidden rounded-3xl shadow-lg"
               >
                 <img
-                  src={`https://picsum.photos/600/400?random=${item}`}
+                  src={`/images/gallery/img${item}.jpg`}
                   alt="Gallery"
                   className="h-72 w-full object-cover"
                 />
@@ -235,10 +236,13 @@ export default function Activities() {
           </div>
 
           <div className="mt-12 text-center">
-            <button className="inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 transition">
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 transition"
+            >
               View Full Gallery
               <ArrowRight size={18} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

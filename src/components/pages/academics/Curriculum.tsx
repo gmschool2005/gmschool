@@ -171,31 +171,31 @@ export default function Curriculums() {
             <div className="mx-auto mt-4 h-1 w-24 bg-[#D4AF37] rounded-full"></div>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {academicLevels.map((level, index) => (
-              <div
-                key={index}
-                className="rounded-3xl bg-white p-8 shadow-lg hover:shadow-xl transition-all"
-              >
-                <GraduationCap
-                  className="text-[#082C6C] mb-5"
-                  size={42}
-                />
+         <div className="mx-auto grid max-w-5xl gap-8 grid-cols-1 sm:grid-cols-2">
+  {academicLevels.map((level, index) => (
+    <div
+      key={index}
+      className="rounded-3xl bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+    >
+      <GraduationCap
+        className="mb-5 text-[#082C6C]"
+        size={42}
+      />
 
-                <h3 className="text-xl font-bold text-[#082C6C]">
-                  {level.title}
-                </h3>
+      <h3 className="text-xl font-bold text-[#082C6C]">
+        {level.title}
+      </h3>
 
-                <p className="mt-2 text-[#B22222] font-semibold">
-                  {level.classes}
-                </p>
+      <p className="mt-2 font-semibold text-[#B22222]">
+        {level.classes}
+      </p>
 
-                <p className="mt-4 text-gray-600 leading-relaxed">
-                  {level.description}
-                </p>
-              </div>
-            ))}
-          </div>
+      <p className="mt-4 leading-relaxed text-gray-600">
+        {level.description}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

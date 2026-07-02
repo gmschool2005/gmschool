@@ -219,7 +219,7 @@ export default function Hostel() {
               </h2>
 
               <div className="mt-5 text-5xl font-bold text-[#082C6C]">
-                ₹400
+                ₹4000
               </div>
 
               <p className="mt-2 text-gray-500">

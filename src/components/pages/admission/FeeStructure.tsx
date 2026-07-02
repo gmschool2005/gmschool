@@ -114,7 +114,7 @@ export default function FeeStructure() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/fee-structure.jpg"
+                src="/images/gallery/img34.jpg"
                 alt="School Fee Structure"
                 className="h-full w-full object-cover"
               />

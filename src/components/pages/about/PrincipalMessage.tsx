@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 const VALUES = [
   { icon: "📖", title: "Academic Excellence", desc: "We cultivate curiosity and a love of learning through rigorous, thoughtful education." },
   { icon: "🤝", title: "Character & Integrity", desc: "Honesty, respect, and responsibility are the pillars we build every student upon." },
@@ -31,12 +31,11 @@ G.M. English School is committed to stimulating an environment where each and ev
         {/* Hero row — photo + name */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
           {/* Avatar */}
-          <div
-            className="flex-shrink-0 w-28 h-28 rounded-2xl border-4 border-white shadow-md flex items-center justify-center text-4xl"
-            style={{ background: "#e8eef7" }}
-          >
-            🧑‍💼
-          </div>
+          <img
+            src="/images/gallery/principal.jpg"
+            alt="Principal"
+            className="h-32 w-32 flex-shrink-0 rounded-3xl object-cover object-top border-4 border-white shadow-xl"
+          />
 
           <div className="text-center sm:text-left">
             <h1 className="text-2xl font-bold text-[#0a2463] leading-tight">
@@ -47,7 +46,7 @@ G.M. English School is committed to stimulating an environment where each and ev
 
             {/* Credential badges */}
             <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-3">
-              {["M.Ed.", "B.Sc. (Hons)", "25+ Years Experience"].map((b) => (
+              {["B.Ed.", "B.Sc.", "30+ Years Experience"].map((b) => (
                 <span
                   key={b}
                   className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#e8eef7] text-[#0a2463]"
@@ -146,11 +145,11 @@ G.M. English School is committed to stimulating an environment where each and ev
           </div>
           <div className="flex gap-3">
             <Link to="/contact">
-            <span className="text-xs font-semibold px-4 py-2 rounded-full bg-white text-[#0a2463]">
-              📞 Write to office
-            </span>
+              <span className="text-xs font-semibold px-4 py-2 rounded-full bg-white text-[#0a2463]">
+                📞 Write to office
+              </span>
             </Link>
-           
+
           </div>
         </div>
 

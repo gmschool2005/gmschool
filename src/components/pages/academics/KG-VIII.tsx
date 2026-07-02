@@ -147,7 +147,7 @@ export default function Primary() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/primary-school.jpg"
+                src="/images/gallery/img25.jpg"
                 alt="Primary School Students"
                 className="h-full w-full object-cover"
               />
@@ -256,7 +256,7 @@ export default function Primary() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/primary-learning.jpg"
+                src="/images/gallery/img27.jpg"
                 alt="Primary Learning"
                 className="h-full w-full object-cover"
               />

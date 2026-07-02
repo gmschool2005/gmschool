@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
@@ -29,15 +31,15 @@ import Awards from "./components/pages/achievements/Awards";
 import Alumni from "./components/pages/achievements/Alumni";
 
 // Gallery
-import AllPhotos from "./components/pages/gallery/AllPhotos";
-import SportsDay from "./components/pages/gallery/SportsDay";
-import AnnualFunction from "./components/pages/gallery/AnnualFunction";
+import Gallery from "./components/pages/Gallery";
+
 
 import Contact from "./components/pages/Contact";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -49,7 +51,7 @@ function App() {
         <Route path="/about/principal-message" element={<PrincipalMessage />} />
         <Route path="/about/mission-vision" element={<MissionVision />} />
         <Route path="/about/our-team" element={<OurTeam />} />
-        <Route path="/about/hostel-info" element={<Hostel />}/>
+        <Route path="/about/hostel-info" element={<Hostel />} />
 
         {/* Academics */}
         <Route path="/academics/school-timing" element={<SchoolTiming />} />
@@ -63,15 +65,13 @@ function App() {
         <Route path="/admission/apply-online" element={<ApplyOnline />} />
 
         {/* Achievements */}
-        <Route path="/achievements/cbse-class-x" element={<CBSEClassX />}/>
+        <Route path="/achievements/cbse-class-x" element={<CBSEClassX />} />
         <Route path="/achievements/awards" element={<Awards />} />
         <Route path="/achievements/alumni" element={<Alumni />} />
 
         {/* Gallery */}
-        <Route path="/gallery/all-photos" element={<AllPhotos />} />
-        <Route path="/gallery/sports-day" element={<SportsDay />} />
-        <Route path="/gallery/annual-function" element={<AnnualFunction />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />

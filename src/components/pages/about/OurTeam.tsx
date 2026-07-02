@@ -2,57 +2,96 @@ import {
   GraduationCap,
   BookOpen,
   Award,
+  Quote,
+  Star,
 } from "lucide-react";
+
+import { Link } from "react-router-dom";
+
+const principal = {
+  name: "Mr. Rameshwar Singh",
+  designation: "Principal",
+  qualification: "B.Sc , B.Ed.",
+  photo: "/images/gallery/principal.jpg",
+  message:
+    "Education is not just about academics, it is about shaping character, curiosity, and confidence. Every child who walks through our gates is nurtured to discover their fullest potential.",
+};
 
 const teachers = [
   {
-    name: "Mrs. Anjali Sharma",
-    subject: "English",
-    qualification: "M.A., B.Ed.",
-    experience: "12 Years Experience",
+    name: "Prithvi Raj Singh",
+    subject: "Science & Mathematics",
+    qualification: "B.Sc( Mathematics Hons. )",
+    photo: "/images/gallery/tch1.jpg",
   },
   {
-    name: "Mr. Rajesh Kumar",
-    subject: "Mathematics",
-    qualification: "M.Sc., B.Ed.",
-    experience: "15 Years Experience",
+    name: "Saurabh Kumar",
+    subject: "Mathematics & Social Science",
+    qualification: "Graduate, D.El.Ed & CTET",
+    photo: "/images/gallery/tch2.jpg",
   },
   {
-    name: "Mrs. Priya Singh",
-    subject: "Science",
-    qualification: "M.Sc., B.Ed.",
-    experience: "10 Years Experience",
+    name: "Rahul Ojha",
+    subject: "Computer",
+    qualification: "Graduate & BSCIT",
+    photo: "/images/gallery/tch3.jpg",
   },
   {
-    name: "Mr. Amit Verma",
-    subject: "Computer Science",
-    qualification: "MCA, B.Ed.",
-    experience: "8 Years Experience",
+    name: "Sarfudeen Miyan",
+    subject: "Sanskrit & Science",
+    qualification: "Graduate, D.El.Ed & CTET",
+    photo: "/images/gallery/tch4.jpg",
   },
   {
-    name: "Mrs. Neha Sinha",
-    subject: "Social Science",
-    qualification: "M.A., B.Ed.",
-    experience: "11 Years Experience",
-  },
-  {
-    name: "Mr. Vikash Kumar",
+    name: "Sanjay Mishra",
     subject: "Hindi",
-    qualification: "M.A., B.Ed.",
-    experience: "9 Years Experience",
+    qualification: "Post Graduate",
+    photo: "/images/gallery/tch5.jpg",
   },
   {
-    name: "Mrs. Poonam Gupta",
-    subject: "Primary Coordinator",
-    qualification: "M.Ed.",
-    experience: "14 Years Experience",
+    name: "Ranjan Chaubey",
+    subject: "Social Science",
+    qualification: "Graduate & D.El.Ed",
+    photo: "/images/gallery/tch6.jpg",
   },
   {
-    name: "Mr. Sandeep Mishra",
-    subject: "Physical Education",
-    qualification: "B.P.Ed., M.P.Ed.",
-    experience: "7 Years Experience",
+    name: "Riti Kumari Barnwal",
+    subject: "English",
+    qualification: " Intermediate & D.El.Ed",
+    photo: "/images/gallery/tch7.jpg",
   },
+  {
+    name: "Palak Kumari",
+    subject: "General Knowledge",
+    qualification: "Graduate",
+    photo: "/images/gallery/tch8.jpg",
+  },
+  {
+    name: "Shashi Bhushan Kumar",
+    subject: "Social Science",
+    qualification: "D.El.Ed & CTET",
+    photo: "/images/gallery/tch9.jpg",
+  },
+  {
+    name: "Sandeep Kumar",
+    subject: "Hindi & Mathematics",
+    qualification: "Graduate & D.El.Ed",
+    photo: "/images/gallery/tch10.jpg",
+  },
+  {
+    name: "Riya Kumari",
+    subject: "Social Science",
+    qualification: "Intermediate",
+    photo: "/images/gallery/tch11.jpg",
+  },
+  {
+    name: "Mohit Kumar",
+    subject: "General Knowledge",
+    qualification: "Intermediate",
+    photo: "/images/gallery/tch12.jpg",
+  },
+
+
 ];
 
 export default function OurTeam() {
@@ -97,7 +136,7 @@ export default function OurTeam() {
 
             <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-yellow-400">
               <img
-                src="/images/gallery/img7.JPG"
+                src="/images/gallery/img7.jpg"
                 alt="Teaching Faculty"
                 className="w-full h-[450px] object-cover"
               />
@@ -157,8 +196,62 @@ export default function OurTeam() {
         <div className="h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
       </div>
 
+      {/* Principal's Message - Special Section */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-10">
+          <span className="inline-flex items-center gap-2 rounded-full bg-yellow-50 border border-yellow-300 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-[#082C6C]">
+            <Star className="w-4 h-4 text-yellow-600" />
+            From the Principal's Desk
+          </span>
+        </div>
+
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#082C6C] via-[#0D3B8E] to-[#164DA8] shadow-2xl">
+          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-yellow-400/10 blur-3xl" />
+          <div className="absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-white/5 blur-3xl" />
+
+          <div className="relative grid md:grid-cols-[300px_1fr] gap-10 p-8 md:p-12 items-center">
+            {/* Principal Photo */}
+            <div className="mx-auto md:mx-0">
+              <div className="relative">
+                <div className="absolute -inset-2 rounded-2xl bg-yellow-400/30 blur-lg"></div>
+                <div className="relative w-56 h-74 md:w-full md:h-72 overflow-hidden rounded-2xl border-4 border-yellow-400 shadow-xl">
+                  <img
+                    src={principal.photo}
+                    alt={principal.name}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Principal Content */}
+            <div className="text-white text-center md:text-left">
+              <Quote className="w-10 h-10 text-yellow-400 mb-4 mx-auto md:mx-0" />
+              <p className="text-lg md:text-xl leading-relaxed text-blue-50 italic mb-8">
+                {principal.message}
+              </p>
+
+              <div className="w-16 h-1 bg-yellow-400 rounded-full mb-5 mx-auto md:mx-0"></div>
+
+              <h3 className="text-2xl font-bold">{principal.name}</h3>
+              <p className="text-yellow-300 font-semibold mt-1">
+                {principal.designation}
+              </p>
+              <p className="text-blue-100 text-sm mt-1">
+                {principal.qualification}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gold Divider */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+      </div>
+
       {/* Faculty Members */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
+      <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#082C6C]">
             Our Esteemed Faculty Members
@@ -172,33 +265,34 @@ export default function OurTeam() {
           </p>
         </div>
 
-        <div className="overflow-x-auto bg-white rounded-2xl shadow-lg border border-gray-200">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-[#082C6C] text-white">
-                <th className="px-6 py-4 text-left font-semibold">S. No.</th>
-                <th className="px-6 py-4 text-left font-semibold">Teacher Name</th>
-                <th className="px-6 py-4 text-left font-semibold">Designation</th>
-                <th className="px-6 py-4 text-left font-semibold">Qualification</th>
-              </tr>
-            </thead>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {teachers.map((teacher, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="relative h-56 overflow-hidden bg-blue-50">
+                <img
+                  src={teacher.photo}
+                  alt={teacher.name}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#082C6C] via-yellow-400 to-[#082C6C]" />
+              </div>
 
-            <tbody>
-              {teachers.map((teacher, index) => (
-                <tr
-                  key={index}
-                  className="border-b border-gray-200 hover:bg-blue-50 transition-colors"
-                >
-                  <td className="px-6 py-4">{index + 1}</td>
-                  <td className="px-6 py-4 font-medium text-[#082C6C]">
-                    {teacher.name}
-                  </td>
-                  <td className="px-6 py-4">{teacher.subject}</td>
-                  <td className="px-6 py-4">{teacher.qualification}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+              <div className="p-5 text-center">
+                <h3 className="font-bold text-[#082C6C] text-lg">
+                  {teacher.name}
+                </h3>
+                <p className="text-yellow-600 font-semibold text-sm mt-1">
+                  {teacher.subject}
+                </p>
+                <p className="text-gray-500 text-sm mt-2 border-t border-gray-100 pt-2">
+                  {teacher.qualification}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -222,7 +316,12 @@ export default function OurTeam() {
           </p>
 
           <button className="mt-10 bg-red-600 hover:bg-red-700 transition-colors px-8 py-4 rounded-xl font-semibold shadow-lg">
-            Contact Our Academic Team
+            <Link
+              to="/contact"
+            >
+              Contact Our Team
+            </Link>
+
           </button>
         </div>
       </section>

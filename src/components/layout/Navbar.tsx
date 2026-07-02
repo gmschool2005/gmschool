@@ -61,14 +61,7 @@ export default function Navbar() {
                 { name: "Alumni", path: "/achievements/alumni" },
             ],
         },
-        {
-            title: "Gallery",
-            items: [
-                { name: "All Photos", path: "/gallery/all-photos" },
-                { name: "Sports Day", path: "/gallery/sports-day" },
-                { name: "Annual Function", path: "/gallery/annual-function" },
-            ],
-        },
+
     ];
 
     return (
@@ -172,7 +165,7 @@ export default function Navbar() {
                                 className="text-xs font-semibold tracking-widest uppercase"
                                 style={{ color: '#C9971C', letterSpacing: '0.12em' }}
                             >
-                                Strive for Excellence • Chanaptia
+                                Strive for Excellence
                             </p>
                         </div>
                     </Link>
@@ -233,8 +226,13 @@ export default function Navbar() {
                             </div>
                         ))}
 
-
-
+                        <Link
+                            to="gallery"
+                            className="rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 hover:bg-blue-50"
+                            style={{ color: '#1B2E6B'  }} 
+                        >
+                            Gallery
+                        </Link>
                         <Link
                             to="/contact"
                             className="ml-3 rounded-lg px-5 py-2 text-sm font-bold transition-all duration-200 hover:brightness-110 hover:shadow-lg"
@@ -317,7 +315,17 @@ export default function Navbar() {
                                     )}
                                 </div>
                             ))}
-
+                            <Link
+                                to="/gallery"
+                                className="block rounded-lg px-4 py-3 text-sm font-semibold transition-colors hover:bg-blue-50"
+                                style={{ color: "#1B2E6B" }}
+                                onClick={() => {
+                                    setMobileOpen(false);
+                                    setMobileDropdown("");
+                                }}
+                            >
+                                Gallery
+                            </Link>
 
 
                             <div className="pt-2">
