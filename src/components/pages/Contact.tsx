@@ -32,7 +32,6 @@ const hostelContact = {
 
 export default function Contact() {
   const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=26.9506533,84.5429507";
-  const embedMapUrl = "https://www.google.com/maps?q=26.9506533,84.5429507&z=17&output=embed";
 
   return (
     <div className="bg-white">
