@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ArrowRight,
   BedDouble,
+  PhoneCall,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -37,6 +38,13 @@ const facilities = [
       "Nutritious and hygienic meals are provided to support the health and well-being of students.",
   },
 ];
+
+const hostelContact = {
+  name: "Sandeep Kumar",
+  role: "Hostel In-Charge",
+  phoneDisplay: "+91 76320 15185",
+  phoneHref: "7632015185",
+};
 
 const highlights = [
   "Safe & Secure Residential Environment",
@@ -234,6 +242,25 @@ export default function Hostel() {
                 Affordable hostel accommodation with essential facilities,
                 supervision, security, and nutritious meals for students.
               </p>
+            </div>
+
+            {/* Hostel Enquiries */}
+            <div className="mt-6 rounded-3xl bg-white p-6 shadow-lg border border-gray-200 flex items-center justify-between gap-4 flex-wrap">
+              <div>
+                <h3 className="font-bold text-[#082C6C]">
+                  For Hostel Enquiries
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {hostelContact.name}
+                </p>
+              </div>
+              <a
+                href={`tel:${hostelContact.phoneHref}`}
+                className="inline-flex items-center gap-2 bg-[#082C6C] hover:bg-[#0D3B8E] transition-colors text-white px-5 py-3 rounded-xl font-semibold text-sm shadow-lg shrink-0"
+              >
+                <PhoneCall className="w-4 h-4 text-yellow-400" />
+                {hostelContact.phoneDisplay}
+              </a>
             </div>
           </div>
         </div>

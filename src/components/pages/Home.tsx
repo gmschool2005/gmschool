@@ -453,7 +453,7 @@ export default function OurSchool() {
 
           <Reveal from="right" delay={120}>
             <div className="gs-story-photo">
-              <SchoolImg src="/images/gallery/img7.jpg" alt="Campus" fallback="School Campus" />
+              <SchoolImg src="/images/gallery/img7.JPG" alt="Campus" fallback="School Campus" />
             </div>
             <div className="gs-quote">
               <p className="gs-quote-text">

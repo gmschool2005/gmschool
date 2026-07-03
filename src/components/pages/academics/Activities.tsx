@@ -221,7 +221,7 @@ export default function Activities() {
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 5, 6, 25].map((item) => (
+            {[50, 60, 51, 26,58, 25].map((item) => (
               <div
                 key={item}
                 className="overflow-hidden rounded-3xl shadow-lg"

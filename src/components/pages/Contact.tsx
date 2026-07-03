@@ -23,6 +23,13 @@ const contactDetails = {
     "Near Solar Plant, Ward No. 06, Chiran Chowk to Pakdihar Road, Chanpatia, Bihar 845449",
 };
 
+const hostelContact = {
+  name: "Sandeep Kumar",
+  role: "Hostel In-Charge",
+  phoneDisplay: "+91 76320 15185",
+  phoneHref: "7632015185",
+};
+
 export default function Contact() {
   const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=26.9506533,84.5429507";
   const embedMapUrl = "https://www.google.com/maps?q=26.9506533,84.5429507&z=17&output=embed";
@@ -182,6 +189,25 @@ export default function Contact() {
                 <p className="text-sm text-gray-600">Bihar – 845449</p>
               </div>
             </div>
+
+            {/* Hostel Enquiries */}
+            <div className="mt-5 bg-white rounded-2xl p-5 border border-gray-200 shadow-md flex items-center justify-between gap-4 flex-wrap">
+              <div>
+                <h3 className="font-bold text-[#082C6C]">
+                  For Hostel Enquiries
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {hostelContact.name} · {hostelContact.role}
+                </p>
+              </div>
+              <a
+                href={`tel:${hostelContact.phoneHref}`}
+                className="inline-flex items-center gap-2 bg-[#082C6C] hover:bg-[#0D3B8E] transition-colors text-white px-5 py-3 rounded-xl font-semibold text-sm shadow-lg shrink-0"
+              >
+                <PhoneCall className="w-4 h-4 text-yellow-400" />
+                {hostelContact.phoneDisplay}
+              </a>
+            </div>
           </div>
 
           {/* Action Card */}
@@ -221,23 +247,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-
-      {/* Google Map */}
-      <section className="max-w-7xl mx-auto px-6 pb-20">
-        <div className="overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
-          <iframe
-            src={embedMapUrl}
-            title="G. M. English School Location"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-          />
         </div>
       </section>
 
