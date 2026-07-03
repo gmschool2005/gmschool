@@ -9,7 +9,7 @@ import {
   BedDouble,
 } from "lucide-react";
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const facilities = [
   {
@@ -78,7 +78,7 @@ export default function Hostel() {
           </div>
         </div>
       </section>
-     
+
       {/* Gold Divider */}
       <div className="h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
@@ -258,13 +258,12 @@ export default function Hostel() {
           </p>
 
           <Link
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition"
-                
-              to="/contact"
-            >
-              Enquire About Hostel Admission
-              <ArrowRight size={18} />
-            </Link>  
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition"
+            to="/contact"
+          >
+            Enquire About Hostel Admission
+            <ArrowRight size={18} />
+          </Link>
         </div>
       </section>
     </div>

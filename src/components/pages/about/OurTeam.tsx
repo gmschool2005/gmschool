@@ -333,7 +333,7 @@ export default function OurTeam() {
             leaders through knowledge, values, discipline, and innovation.
           </p>
 
-          <button className="mt-10 bg-red-600 hover:bg-red-700 transition-colors px-8 py-4 rounded-xl font-semibold shadow-lg">
+          <button className="mt-10 bg-red-600 hover:bg-red-700 transition-colors px-3 py-2 rounded-xl font-semibold shadow-lg">
             <Link
               to="/contact"
             >

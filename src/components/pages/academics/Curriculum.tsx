@@ -8,6 +8,7 @@ import {
   ArrowRight,
   School,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const academicLevels = [
   {
@@ -297,10 +298,15 @@ export default function Curriculums() {
             rapidly evolving world.
           </p>
 
-          <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl transition hover:scale-105">
-            Explore Admissions
+          
+            <Link
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition"
+            to="/contact"
+          >
+            Enquire About Hostel Admission
             <ArrowRight size={18} />
-          </button>
+          </Link>
+            
         </div>
       </section>
     </div>

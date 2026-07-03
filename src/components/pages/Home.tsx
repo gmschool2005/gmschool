@@ -512,7 +512,7 @@ export default function OurSchool() {
           <div className="gs-cta-inner">
             <div className="gs-cta-bell"><Bell size={26} /></div>
             <h2 className="gs-cta-title">Ready to Join Our Family?</h2>
-            <p className="gs-cta-sub">Admissions for 2025–26 are now open. Give your child the education they deserve.</p>
+            <p className="gs-cta-sub">Give your child the education they deserve.</p>
             <div className="gs-cta-buttons">
               <MagneticLink to="/contact" variant="primary">Apply for Admission</MagneticLink>
               <MagneticLink to="/admission/process" variant="ghost">Learn the Process</MagneticLink>
