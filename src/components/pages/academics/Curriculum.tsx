@@ -59,6 +59,8 @@ const subjects = [
   "Science",
   "Social Science",
   "Computer Science",
+  "Sanskrit",
+  "Urdu",
   "General Knowledge",
   "Physical Education",
   "Art & Craft",

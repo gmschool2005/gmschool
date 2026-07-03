@@ -90,6 +90,24 @@ const teachers = [
     qualification: "Intermediate",
     photo: "/images/gallery/tch12.jpg",
   },
+  {
+    name: "Vandana Kumari",
+    subject: "English",
+    qualification: "B.Sc",
+    photo: "/images/gallery/tch13.jpg",
+  },
+  {
+    name: "Kumari Shushma Pandit ",
+    subject: "English",
+    qualification: "ICOM",
+    photo: "/images/gallery/tch14.jpg",
+  },
+  {
+    name: "Shagufta Praveen",
+    subject: "Urdu",
+    qualification: "Urdu Hons.",
+    photo: "/images/gallery/tch15.jpg",
+  },
 
 
 ];
@@ -136,9 +154,9 @@ export default function OurTeam() {
 
             <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-yellow-400">
               <img
-                src="/images/gallery/img7.jpg"
+                src="/images/gallery/img40.jpg"
                 alt="Teaching Faculty"
-                className="w-full h-[450px] object-cover"
+                className="w-full h-[350px] object-cover"
               />
             </div>
           </div>

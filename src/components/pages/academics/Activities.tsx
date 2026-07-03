@@ -25,7 +25,7 @@ const activities = [
     description:
       "Celebrating creativity and cultural heritage through music, dance, drama, and stage performances.",
     image:
-      "/images/gallery/img5.jpg",
+      "/images/gallery/img5.JPG",
   },
   {
     title: "Art & Craft",
@@ -33,7 +33,7 @@ const activities = [
     description:
       "Providing opportunities for artistic expression and imagination through various creative projects.",
     image:
-      "/images/gallery/img23.jpg",
+      "/images/gallery/img53.jpg",
   },
   {
     title: "Literary Activities",
@@ -193,7 +193,7 @@ export default function Activities() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/gallery/img1.jpg"
+                src="/images/gallery/img60.jpg"
                 alt="Featured Activities"
                 className="h-full w-full object-cover"
               />

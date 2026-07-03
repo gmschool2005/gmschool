@@ -367,11 +367,11 @@ export default function OurSchool() {
   ];
 
   const gallery: DeckItem[] = [
-    { src: "/images/gallery/", caption: "Morning Assembly", tag: "Everyday" },
+    { src: "/images/gallery/img41.jpg", caption: "Morning Assembly", tag: "Everyday" },
     { src: "/images/gallery/img25.jpg", caption: "In the Classroom", tag: "Academics" },
     { src: "/images/gallery/img26.jpg", caption: "Young Scholars", tag: "Students" },
     { src: "/images/gallery/img27.jpg", caption: "Hands-on Learning", tag: "Classroom" },
-    { src: "/images/gallery/img30", caption: "Sports Day", tag: "Activities" },
+    { src: "/images/gallery/img30.jpg", caption: "Sports Day", tag: "Activities" },
     { src: "/images/gallery/img23.jpg", caption: "Our Campus", tag: "Chanaptia" },
   ];
 

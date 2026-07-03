@@ -9,6 +9,8 @@ import {
   BedDouble,
 } from "lucide-react";
 
+import {Link} from "react-router-dom";
+
 const facilities = [
   {
     icon: Zap,
@@ -111,7 +113,7 @@ export default function Hostel() {
 
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/hostel.jpg"
+                src="/images/gallery/img23.jpg"
                 alt="School Hostel"
                 className="h-full w-full object-cover"
               />
@@ -169,7 +171,7 @@ export default function Hostel() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/images/hostel-room.jpg"
+                src="/images/gallery/img23.jpg"
                 alt="Hostel Accommodation"
                 className="h-full w-full object-cover"
               />
@@ -255,10 +257,14 @@ export default function Hostel() {
             achievement and personal development.
           </p>
 
-          <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition">
-            Enquire About Hostel Admission
-            <ArrowRight size={18} />
-          </button>
+          <Link
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#B22222] px-8 py-4 font-semibold text-white shadow-xl hover:scale-105 transition"
+                
+              to="/contact"
+            >
+              Enquire About Hostel Admission
+              <ArrowRight size={18} />
+            </Link>  
         </div>
       </section>
     </div>

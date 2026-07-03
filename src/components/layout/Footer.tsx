@@ -27,8 +27,8 @@ export default function Footer() {
   ];
 
   const socials = [
-    { icon: <FaFacebookF size={16} />, href: "#", hoverBg: "#1877F2", label: "Facebook" },
-    { icon: <FaInstagram size={16} />, href: "#", hoverBg: "#E1306C", label: "Instagram" },
+    { icon: <FaFacebookF size={16} />, href: "https://www.facebook.com/share/1EHajhUeJo/", hoverBg: "#1877F2", label: "Facebook" },
+    { icon: <FaInstagram size={16} />, href: "https://www.instagram.com/g.m_english_school?igsh=ZnppdTB5NXJtczU=", hoverBg: "#E1306C", label: "Instagram" },
     { icon: <FaYoutube size={16} />, href: "#", hoverBg: "#FF0000", label: "YouTube" },
     { icon: <FaXTwitter size={16} />, href: "#", hoverBg: "#000000", label: "X / Twitter" },
     { icon: <FaLinkedinIn size={16} />, href: "#", hoverBg: "#0A66C2", label: "LinkedIn" },

@@ -50,6 +50,8 @@ const subjects = [
   "Art & Craft",
   "Music",
   "Physical Education",
+  "Urdu",
+  "Sanskrit"
 ];
 
 const highlights = [
