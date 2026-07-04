@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 const galleryImages = [
   { src: "/images/gallery/img1.jpg", category: "campus", caption: "Campus Life" },
   { src: "/images/gallery/img2.jpg", category: "campus", caption: "Campus Life" },
-  { src: "/images/gallery/img7.jpg", category: "campus", caption: "Campus Life" },
+  { src: "/images/gallery/img7.JPG", category: "campus", caption: "Campus Life" },
   { src: "/images/gallery/img23.jpg", category: "campus", caption: "Campus Life" },
   { src: "/images/gallery/img25.jpg", category: "campus", caption: "Campus Life" },
   { src: "/images/gallery/img26.jpg", category: "campus", caption: "Campus Life" },

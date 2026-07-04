@@ -59,10 +59,7 @@ export default function MissionVision() {
 
             <div className="p-8">
               <p className="text-gray-700 leading-8 text-lg">
-                Our mission is to provide a nurturing, inclusive, and inspiring
-                learning environment where every student is empowered to achieve
-                academic excellence, develop strong character, and become a
-                responsible global citizen.
+                To provide quality education at an affordable cost, ensuring that every child has the opportunity to learn, grow, and achieve excellence in life
               </p>
 
               <div className="mt-8 space-y-4">
@@ -101,10 +98,7 @@ export default function MissionVision() {
 
             <div className="p-8">
               <p className="text-gray-700 leading-8 text-lg">
-                Our vision is to be a leading educational institution that
-                inspires excellence, cultivates values, and prepares students to
-                thrive confidently in an ever-changing world while contributing
-                positively to society.
+                To empower every student to achieve academic excellence, develop strong moral values, and become a confident and responsible citizen.
               </p>
 
               <div className="mt-8 space-y-4">
